@@ -4,7 +4,6 @@ MAINTAINER Sahana  "snarayan23@cmc.edu"
 
 RUN apt-get update -y && \
     apt-get install -y python3-pip python3-dev
-RUN pip3 install markupsafe==2.0.1 
 
 # We copy just the requirements.txt first to leverage Docker cache
 COPY ./requirements.txt /app/requirements.txt
